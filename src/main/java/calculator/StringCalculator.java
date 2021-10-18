@@ -77,8 +77,10 @@ public class StringCalculator {
 		 return Stream.of(delimiter.split("]\\["))
 				 .map(Pattern::quote)
 				 .collect(Collectors.joining("|"));
-				 
-
 	 }
+	
+	public static int GetCalledCount(){
+		return count;
+	}
 	
 }
