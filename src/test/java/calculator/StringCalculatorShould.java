@@ -61,6 +61,12 @@ class StringCalculatorShould {
 	}
 	
 	@Test
+	void should_return_GetCalledCount() throws Exception
+	{
+		StringCalculator stringCalculator = new StringCalculator();
+		assertEquals(
+	
+	@Test
     void should_maps_Number_Above_1000_To_Last_Three_Digits(){
         StringCalculator stringCalculator = new StringCalculator();
          assertEquals(2, stringCalculator.add("1002"));
