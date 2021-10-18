@@ -13,7 +13,7 @@ public class StringCalculator {
 	private String delimiter;
 	private String numbers;
 	
-	
+	private static int count=0;
 	 public StringCalculator() {
 		super();
 	}
@@ -53,6 +53,7 @@ public class StringCalculator {
 	 }
 	 
 	public static int add(String input) {
+		count++;
 		return parseInput(input).sum(); 
 	 }
 	 
@@ -76,8 +77,9 @@ public class StringCalculator {
 		 return Stream.of(delimiter.split("]\\["))
 				 .map(Pattern::quote)
 				 .collect(Collectors.joining("|"));
-				 
-
 	 }
 	
+	public static int GetCalledCount(){
+		return count;
+	}	
 }
